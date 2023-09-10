@@ -1,7 +1,16 @@
 import { useEffect, useState } from "react";
+import { getStoreLocations } from "../../../services";
 
 function Form({ car }: any) {
   const [storeLocation, setStoreLocation] = useState<any>([]);
+
+  useEffect(() => {
+    getLocations();
+  }, []);
+  const getLocations = async () => {
+    const locations: any = await getStoreLocations();
+    setStoreLocation(locations?.storeLocations);
+  };
 
   const [formValue, setFormValue] = useState({
     location: "",

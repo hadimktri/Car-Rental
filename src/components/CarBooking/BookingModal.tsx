@@ -1,7 +1,7 @@
 import CarCard from "../home/CarCard";
 import Form from "./Form";
 
-function BookingModal({ car }: any) {
+export default function BookingModal({ car }: any) {
   return (
     <form method="dialog" className="modal-box w-11/12 max-w-5xl">
       <div className="border-b-[1px] pb-2 ">
@@ -24,4 +24,4 @@ function BookingModal({ car }: any) {
   );
 }
 
-export default BookingModal;
+
