@@ -1,8 +1,13 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
-function CarsFiltersOption({ carsList, setBrand, orderCarList, reset }: any) {
+export default function CarsFiltersOption({
+  carsList,
+  setBrand,
+  orderCarList,
+  reset,
+}: any) {
   const [brandList, setBrandList] = useState<any>();
   const BrandSet = new Set();
 
@@ -10,6 +15,7 @@ function CarsFiltersOption({ carsList, setBrand, orderCarList, reset }: any) {
     if (carsList) {
       filterCarList();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [carsList]);
 
   const filterCarList = () => {
@@ -62,5 +68,3 @@ function CarsFiltersOption({ carsList, setBrand, orderCarList, reset }: any) {
     </div>
   );
 }
-
-export default CarsFiltersOption;

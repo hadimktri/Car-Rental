@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import CarsFiltersOptions from "@/components/home/CarsFiltersOptions";
 import Hero from "@/components/home/Hero";
@@ -8,8 +8,8 @@ import { useEffect, useState } from "react";
 import CarsList from "@/components/home/CarsList";
 
 export default function Home() {
-  const [carsList, setCarsList] = useState<any>([]);
   const [carsOrgList, setCarsOrgList] = useState<any>([]);
+  const [carsList, setCarsList] = useState<any>([]);
 
   useEffect(() => {
     getAllCars();

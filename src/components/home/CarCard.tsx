@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
@@ -30,7 +30,7 @@ border-blue-500 "
         </h2>
         <div className="flex justify-center">
           <Image
-            src={car?.image[0]?.url}
+            src={car?.image?.url}
             alt={car.name}
             width={220}
             height={200}
