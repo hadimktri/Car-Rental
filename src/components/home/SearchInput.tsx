@@ -6,7 +6,7 @@ export default function SearchInput() {
         Lets Search what you need
       </h2>
       <div className="flex justify-center">
-        <div className="flex bg-gray-100 rounded-full p-1 pb-2 divide-x">
+        <div className="flex bg-gray-100 rounded-xl p-2 divide-x">
           <div className="text-gray-400 flex gap-2 items-center">
             <TiLocation size={25} color="black" />
             <input

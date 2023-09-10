@@ -1,6 +1,6 @@
 import { request, gql } from "graphql-request";
 
-export const getCarList = async () => {
+export const getCarsList = async () => {
   const query = gql`
     query CarLists {
       carLists {
@@ -10,6 +10,7 @@ export const getCarList = async () => {
         name
         price
         carType
+        carBrand
         publishedAt
         updatedAt
         seat

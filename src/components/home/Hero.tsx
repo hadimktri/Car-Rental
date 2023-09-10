@@ -18,7 +18,7 @@ export default function Hero() {
         </h2>
         <button
           className="p-2 mt-5 bg-blue-500 text-white
-            px-4 rounded-full 
+            px-4 rounded-xl 
             hover:scale-105 transition-all"
         >
           Explore Cars

@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { FaGasPump } from "react-icons/fa";
